@@ -1,0 +1,27 @@
+{
+  "name": "sendcrate",
+  "version": "1.0.0",
+  "description": "Privacy-first, self-hosted temporary file sharing with encrypted links, CLI support, QR codes and automatic cleanup.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test",
+    "cli": "node cli/sendcrate.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2",
+    "qrcode": "^1.5.4",
+    "dotenv": "^17.2.2"
+  },
+  "bin": {
+    "sendcrate": "./cli/sendcrate.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Download — SendCrate</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">SendCrate</a>
+  </header>
+
+  <main class="shell share-page">
+    <section id="loading" class="hero">
+      <p class="eyebrow">SENDCRATE</p>
+      <h1>Loading share…</h1>
+    </section>
+
+    <section id="shareCard" class="download-card hidden">
+      <div class="file-icon">↓</div>
+      <p class="eyebrow">READY TO DOWNLOAD</p>
+      <h1 id="fileName">File</h1>
+      <p id="fileMeta" class="muted"></p>
+
+      <div id="passwordBox" class="password-box hidden">
+        <label>Password</label>
+        <input id="downloadPassword" type="password" placeholder="Enter password">
+      </div>
+
+      <button id="downloadButton" class="primary">Download</button>
+      <button id="qrButton" class="secondary">Show QR code</button>
+      <img id="qr" class="qr hidden" alt="QR code">
+      <p id="shareStatus" class="status"></p>
+    </section>
+  </main>
+
+  <script src="/share.js" type="module"></script>
+</body>
+</html>
